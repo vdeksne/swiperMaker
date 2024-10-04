@@ -29,7 +29,7 @@ export default {
         { src: "default.png", alt: "Default" },
         { src: "cube.png", alt: "Cube" },
         { src: "fade.png", alt: "Fade" },
-        { src: "creative.png", alt: "Fade" },
+        { src: "creative.png", alt: "Creative" },
         // Add more images as needed
       ],
     };
@@ -40,11 +40,11 @@ export default {
   methods: {
     chooseType(index) {
       this.selectedIndex = index;
-      if (this.selectedIndex == 0) {
+      if (this.selectedIndex === 0) {
         this.type = "multiple";
-      } else if (this.selectedIndex == 1) {
+      } else if (this.selectedIndex === 1) {
         this.type = "cube";
-      } else if (this.selectedIndex == 3) {
+      } else if (this.selectedIndex === 3) {
         this.type = "creative";
       } else {
         this.type = "single";

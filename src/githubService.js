@@ -1,5 +1,5 @@
-const { Octokit } = require("@octokit/rest");
-const fetch = require("node-fetch");
+import { Octokit } from "@octokit/rest";
+import fetch from "node-fetch";
 
 const octokit = new Octokit({
   request: {
